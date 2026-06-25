@@ -1,0 +1,292 @@
+{
+  "geocoded_waypoints": [
+    {
+      "geocoder_status": "OK",
+      "place_id": "ChIJsRdro_5HDW0RpFmy0CRiKRE",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "shopping_mall"
+      ]
+    },
+    {
+      "geocoder_status": "OK",
+      "place_id": "ChIJadiL32BIDW0REOqiQ2HvAAU",
+      "types": [
+        "political",
+        "sublocality",
+        "sublocality_level_1"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "bounds": {
+        "northeast": {
+          "lat": -36.8441807,
+          "lng": 174.7781329
+        },
+        "southwest": {
+          "lat": -36.8675899,
+          "lng": 174.7635883
+        }
+      },
+      "copyrights": "Powered by Google, \u00a92026 Google",
+      "legs": [
+        {
+          "arrival_time": {
+            "text": "11:54\u202fAM",
+            "time_zone": "Pacific/Auckland",
+            "value": 1782431662
+          },
+          "departure_time": {
+            "text": "11:36\u202fAM",
+            "time_zone": "Pacific/Auckland",
+            "value": 1782430593
+          },
+          "distance": {
+            "text": "4.1 km",
+            "value": 4138
+          },
+          "duration": {
+            "text": "18 mins",
+            "value": 1069
+          },
+          "end_address": "Newmarket, Auckland, New Zealand",
+          "end_location": {
+            "lat": -36.8675899,
+            "lng": 174.7781329
+          },
+          "start_address": "Britomart, Te Ara Tahuhu, Auckland CBD, Auckland 1140, New Zealand",
+          "start_location": {
+            "lat": -36.8441807,
+            "lng": 174.7701947
+          },
+          "steps": [
+            {
+              "distance": {
+                "text": "0.2 km",
+                "value": 248
+              },
+              "duration": {
+                "text": "3 mins",
+                "value": 206
+              },
+              "end_location": {
+                "lat": -36.8454712,
+                "lng": 174.7699449
+              },
+              "html_instructions": "Walk to Britomart Place",
+              "polyline": {
+                "points": "bc{_Fuxui`@b@mCD@p@NLD^JFBJDf@d@JHPNNJND@XCd@"
+              },
+              "start_location": {
+                "lat": -36.8441807,
+                "lng": 174.7701947
+              },
+              "steps": [
+                {
+                  "distance": {
+                    "text": "69 m",
+                    "value": 69
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 55
+                  },
+                  "end_location": {
+                    "lat": -36.84436400000001,
+                    "lng": 174.7708958
+                  },
+                  "html_instructions": "Head <b>east</b> on <b>Quay St</b>/<wbr/><b>Rte 6</b> toward <b>Britomart Pl</b>",
+                  "polyline": {
+                    "points": "bc{_Fuxui`@b@mC"
+                  },
+                  "start_location": {
+                    "lat": -36.8441807,
+                    "lng": 174.7701947
+                  },
+                  "travel_mode": "WALKING"
+                },
+                {
+                  "distance": {
+                    "text": "0.1 km",
+                    "value": 147
+                  },
+                  "duration": {
+                    "text": "2 mins",
+                    "value": 126
+                  },
+                  "end_location": {
+                    "lat": -36.845483,
+                    "lng": 174.7702613
+                  },
+                  "html_instructions": "Turn <b>right</b> onto <b>Britomart Pl</b>",
+                  "maneuver": "turn-right",
+                  "polyline": {
+                    "points": "fd{_Fc}ui`@D@p@NLD^JFBJDf@d@JHPNNJND"
+                  },
+                  "start_location": {
+                    "lat": -36.84436400000001,
+                    "lng": 174.7708958
+                  },
+                  "travel_mode": "WALKING"
+                },
+                {
+                  "distance": {
+                    "text": "32 m",
+                    "value": 32
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 25
+                  },
+                  "end_location": {
+                    "lat": -36.8454712,
+                    "lng": 174.7699449
+                  },
+                  "html_instructions": "Turn <b>right</b> onto <b>Customs St E</b>",
+                  "maneuver": "turn-right",
+                  "polyline": {
+                    "points": "fk{_Fcyui`@@XCd@"
+                  },
+                  "start_location": {
+                    "lat": -36.845483,
+                    "lng": 174.7702613
+                  },
+                  "travel_mode": "WALKING"
+                }
+              ],
+              "travel_mode": "WALKING"
+            },
+            {
+              "distance": {
+                "text": "3.8 km",
+                "value": 3803
+              },
+              "duration": {
+                "text": "13 mins",
+                "value": 791
+              },
+              "end_location": {
+                "lat": -36.86741,
+                "lng": 174.77725
+              },
+              "html_instructions": "Bus towards Botany",
+              "polyline": {
+                "points": "zj{_Fewui`@R@@e@?_@Ag@?E@_@@WFk@BMV_BJ@R@N@PCNITILG^OBAdBu@VKJGBA\\Sb@_@BEtBgCVUPSf@SPITGZATAVBh@Pb@^Z^V\\X`@PTLP^f@v@bAHLNR|@hA`@h@Z`@d@l@PVfAtAJN^^FHvAtABBhFfFVXXXFHXTd@`@lAdATXtBdCHHb@h@\\b@VZn@t@LLr@r@t@t@t@v@DDPR^d@z@lAl@z@BDHJBBBBBBLFn@\\PJVm@^w@h@gAj@gABGP]h@eAJQ@Ap@uADKDEFMFMDKR]@E~@kBJMHK@ELg@@QF]BQ?AL_AL{@^_C@G^oCF]DWHWBGHKLIFERGb@O@?VKBAn@OXKLE~@Y`AWlBg@NEZID?JC@?RCd@@XFXFh@Jd@Jd@JbATRB@@@?D@PDD??@^HF@D@r@N@INcA@G@IJu@@GLiA?CFa@LgA@CLeA@ML}@VsBD[b@kD@IL}@Hm@Ju@@Ob@_DDe@BK@QXwBIC"
+              },
+              "start_location": {
+                "lat": -36.84542,
+                "lng": 174.76995
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": -36.86741,
+                    "lng": 174.77725
+                  },
+                  "name": "Broadway"
+                },
+                "arrival_time": {
+                  "text": "11:53\u202fAM",
+                  "time_zone": "Pacific/Auckland",
+                  "value": 1782431591
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": -36.84542,
+                    "lng": 174.76995
+                  },
+                  "name": "Britomart Place"
+                },
+                "departure_time": {
+                  "text": "11:40\u202fAM",
+                  "time_zone": "Pacific/Auckland",
+                  "value": 1782430800
+                },
+                "headsign": "Botany",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Howick and Eastern",
+                      "phone": "011 64 9 355 3553",
+                      "url": "https://at.govt.nz/"
+                    }
+                  ],
+                  "name": "70",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png",
+                    "name": "Bus",
+                    "type": "BUS"
+                  }
+                },
+                "num_stops": 8
+              },
+              "travel_mode": "TRANSIT"
+            },
+            {
+              "distance": {
+                "text": "87 m",
+                "value": 87
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 71
+              },
+              "end_location": {
+                "lat": -36.8675899,
+                "lng": 174.7781329
+              },
+              "html_instructions": "Walk to Newmarket, Auckland, New Zealand",
+              "polyline": {
+                "points": "jt_`Fydwi`@?GBM?E@IJu@?C@IBUFi@@E"
+              },
+              "start_location": {
+                "lat": -36.8674152,
+                "lng": 174.7772483
+              },
+              "steps": [
+                {
+                  "distance": {
+                    "text": "87 m",
+                    "value": 87
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 71
+                  },
+                  "end_location": {
+                    "lat": -36.8675899,
+                    "lng": 174.7781329
+                  },
+                  "html_instructions": "Head <b>east</b> on <b>Khyber Pass Rd</b> toward <b>Osborne St</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+                  "polyline": {
+                    "points": "jt_`Fydwi`@?GBM?E@IJu@?C@IBUFi@@E"
+                  },
+                  "start_location": {
+                    "lat": -36.8674152,
+                    "lng": 174.7772483
+                  },
+                  "travel_mode": "WALKING"
+                }
+              ],
+              "travel_mode": "WALKING"
+            }
+          ],
+          "traffic_speed_entry": [],
+          "via_waypoint": []
+        }
+      ],
+      "overview_polyline": {
+        "points": "bc{_Fuxui`@b@mCD@~@Tf@NJDf@d@\\XNJNDA~@IAR@@eAAm@Bw@Jy@V_BJ@b@B`@Mb@Q`DsANI`As@xBmCh@i@x@]p@ITAVBh@Pb@^r@|@j@v@nBjCjChDjCjDbCbCbHdH~@v@lAdATX~BnC`AlAfApA`A`ApBrBp@x@hBhCTXrAt@v@eBtAoCjA}BhBoD`AqBTYNm@Ho@^oChAuHNo@LSTOv@WlA]hDcA~Cw@LCx@AbCf@~Bf@lAVr@N@IPkA\\qClAwJtBcPd@{DGCBULiANoA"
+      },
+      "summary": "",
+      "warnings": [
+        "Walking directions are in beta. Use caution \u2013 This route may be missing sidewalks or pedestrian paths."
+      ],
+      "waypoint_order": []
+    }
+  ],
+  "status": "OK"
+}

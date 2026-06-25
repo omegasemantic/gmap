@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "destination": "NEWMARKET",
+    "arrival": "1154",
+    "duration": "18m"
+  },
+  "legs": [
+    {
+      "mode": "BUS",
+      "line": "70",
+      "board": "Britomart Pl",
+      "board_time": "1140",
+      "alight": "Broadway",
+      "alight_time": "1153"
+    }
+  ],
+  "final_walk": null,
+  "walk_distance": null,
+  "walk_duration": null
+}

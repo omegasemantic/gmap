@@ -1,0 +1,21 @@
+DONE
+input.py       parse web form string → write gmap.json        ✓
+state.py       read/write gmap.json and codes.json            ✓
+resolver.py    resolve _START/_DES to place IDs               ✓
+directions.py  call Directions API → write response.json      ✓
+format.py      extract/clean → write output.json              ✓
+render.py      write result.html                              ✓
+
+NEXT
+server.py      receive POST from web form → run pipeline → serve result.html
+
+THEN
+web form       HTML form posting to server.py
+basic auth     password protect map.omegasemantic.org
+VPS deploy     push to GitHub → pull to VPS → test live
+
+OUTSTANDING
+_START_TIME    Unix timestamp conversion (deferred)
+_DAY           day modifier (deferred)
+CODE=          writes to codes.json via web form
+reset gmap.json to known defaults in test_pipeline.sh

@@ -1,10 +1,10 @@
 {
-  "_START": "ellerslie",
-  "_DES": "britomart",
+  "_START": "qth",
+  "_DES": "13 fruitale rd",
+  "_START_ID": "ChIJsRdro_5HDW0RpFmy0CRiKRE",
+  "_DES_ID": "ChIJadiL32BIDW0REOqiQ2HvAAU",
   "_MODE": "TRN",
-  "_START_TIME": null,
-  "_ARRIVE_BY_TIME": null,
-  "_DAY": null,
-  "_LAST": true,
-  "_CITY": "Auckland"
+  "_CITY": "Auckland",
+  "_DEP": 1782511200,
+  "_ARR": null
 }

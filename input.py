@@ -1,33 +1,51 @@
 #!/usr/bin/env python3
 """
-input.py — parse web form input and write gmap.json or codes.json
+input.py — parse web form input and write gmap.json
 Usage: python3 input.py "QUERY STRING"
 
 Syntax:
   "destination"
   "destination + start"
-  "destination + start 0900"
-  "destination + start 0900 MON"
-  "destination + start ARR 0900"
-  "destination + start ARR 0900 FRI"
-  "destination + start 0900 LAST"
-  MODE=BUS|TRN|PUB|WLK|CYC|CAR
+  "destination + start DEP HHMM"
+  "destination + start DEP HHMM DAY"
+  "destination + start ARR HHMM"
+  "destination + start ARR HHMM DAY"
+  MODE=TRN|BUS
   CITY=string
   CODE=KEY:PLACEID
-  LAST
 """
 
 import sys
+import os
 import state
+from datetime import datetime, timedelta
 
-VALID_MODES = ['BUS', 'TRN', 'PUB', 'WLK', 'CYC', 'CAR']
-VALID_DAYS  = ['MON', 'TUE', 'TUES', 'WED', 'THU', 'THUR', 'FRI', 'SAT', 'SUN']
+VALID_MODES = ['BUS', 'TRN']
+VALID_DAYS  = {'MON':0,'TUE':1,'WED':2,'THU':3,'FRI':4,'SAT':5,'SUN':6}
+
+def parse_time(hhmm, day_str=None):
+    hour   = int(hhmm[:2])
+    minute = int(hhmm[2:])
+    if hour > 23 or minute > 59:
+        print('ERROR: invalid time')
+        sys.exit(1)
+    now = datetime.now()
+    if day_str:
+        days_ahead = (VALID_DAYS[day_str] - now.weekday()) % 7
+        if days_ahead == 0:
+            days_ahead = 7
+        target = (now + timedelta(days=days_ahead)).replace(
+            hour=hour, minute=minute, second=0, microsecond=0)
+    else:
+        target = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        if target <= now:
+            target += timedelta(days=1)
+    return int(target.timestamp())
 
 def parse(raw):
     tokens = raw.strip()
-    upper = tokens.upper()
+    upper  = tokens.upper()
 
-    # --- standalone config commands ---
     if upper.startswith('MODE='):
         m = tokens[5:].strip().upper()
         if m not in VALID_MODES:
@@ -53,54 +71,61 @@ def parse(raw):
         print(f'codes.json: {key.strip().upper()} => {pid.strip()}')
         return
 
-    # --- split on + for destination / start ---
     if '+' in tokens:
-        parts = tokens.split('+', 1)
+        parts     = tokens.split('+', 1)
         des_raw   = parts[0].strip()
         start_raw = parts[1].strip()
     else:
         des_raw   = tokens.strip()
         start_raw = None
 
-    # --- parse time/day/flags from start_raw ---
-    start_time  = None
-    arrive_by   = None
-    day         = None
-    last        = None
-    start_label = None
-
-    if start_raw:
-        words = start_raw.split()
-        location_words = []
-        i = 0
-        while i < len(words):
-            w = words[i].upper()
-            if w == 'LAST':
-                last = True
-            elif w == 'ARR' and i + 1 < len(words) and words[i+1].isdigit() and len(words[i+1]) == 4:
-                arrive_by = words[i+1]
-                i += 1
-            elif w in VALID_DAYS:
-                day = w
-            elif w.isdigit() and len(w) == 4:
-                start_time = w
-            else:
-                location_words.append(words[i])
-            i += 1
-        start_label = ' '.join(location_words) if location_words else None
-
-    # --- write to gmap.json ---
-    state.write('_DES',            des_raw)
-    state.write('_START_TIME',     start_time)
-    state.write('_ARRIVE_BY_TIME', arrive_by)
-    state.write('_DAY',            day)
-    state.write('_LAST',           last)
-
+    state.write('_DES', des_raw)
+    state.write('_DEP', None)
+    state.write('_ARR', None)
     print(f'_DES => {des_raw}')
 
     if start_raw is not None:
+        words          = start_raw.split()
+        location_words = []
+        time_str       = None
+        day_str        = None
+        arr_mode       = False
+        i = 0
+        while i < len(words):
+            w = words[i].upper()
+            if w in ('DEP', 'ARR'):
+                if i + 1 < len(words) and words[i+1].isdigit() and len(words[i+1]) == 4:
+                    arr_mode = (w == 'ARR')
+                    i += 1
+                    time_str = words[i]
+                else:
+                    print(f'ERROR: {w} must be followed by HHMM e.g. {w} 0900')
+                    sys.exit(1)
+            elif w in VALID_DAYS:
+                if time_str is None:
+                    print('ERROR: DAY must follow a time e.g. DEP 0900 THU')
+                    sys.exit(1)
+                day_str = w
+            else:
+                location_words.append(words[i])
+            i += 1
+
+        start_label = ' '.join(location_words) if location_words else None
         state.write('_START', start_label)
         print(f'_START => {start_label}')
+
+        if time_str:
+            ts = parse_time(time_str, day_str)
+            if arr_mode:
+                state.write('_ARR', ts)
+                state.write('_DEP', None)
+                print(f'_ARR => {ts}')
+            else:
+                state.write('_DEP', ts)
+                state.write('_ARR', None)
+                print(f'_DEP => {ts}')
+            if day_str:
+                print(f'_DAY => {day_str}')
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:

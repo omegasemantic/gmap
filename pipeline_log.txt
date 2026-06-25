@@ -1,0 +1,158 @@
+=== britomart + ellerslie ===
+{
+  "summary": {
+    "destination": "BRITOMART",
+    "arrival": "1222",
+    "duration": "47m"
+  },
+  "legs": [
+    {
+      "mode": "BUS",
+      "line": "70",
+      "board": "Ellerslie Domain",
+      "board_time": "1140",
+      "alight": "Commerce St",
+      "alight_time": "1219"
+    }
+  ],
+  "final_walk": "Britomart",
+  "walk_distance": 263,
+  "walk_duration": "4 mins"
+}
+=== britomart + ellerslie DEP 0900 ===
+{
+  "summary": {
+    "destination": "BRITOMART",
+    "arrival": "0943",
+    "duration": "43m"
+  },
+  "legs": [
+    {
+      "mode": "BUS",
+      "line": "70",
+      "board": "Ellerslie Domain",
+      "board_time": "0904",
+      "alight": "Commerce St",
+      "alight_time": "0940"
+    }
+  ],
+  "final_walk": "Britomart",
+  "walk_distance": 263,
+  "walk_duration": "4 mins"
+}
+=== britomart + ellerslie ARR 1000 ===
+{
+  "summary": {
+    "destination": "BRITOMART",
+    "arrival": "0952",
+    "duration": "36m"
+  },
+  "legs": [
+    {
+      "mode": "BUS",
+      "line": "70",
+      "board": "Ellerslie Panmure Highway",
+      "board_time": "0917",
+      "alight": "Panmure Interchange",
+      "alight_time": "0923"
+    },
+    {
+      "mode": "TRN",
+      "line": "East",
+      "board": "Panmure Station",
+      "board_time": "0934",
+      "alight": "Waitemat\u0101 Train Station",
+      "alight_time": "0950"
+    }
+  ],
+  "final_walk": null,
+  "walk_distance": null,
+  "walk_duration": null
+}
+=== britomart + ellerslie DEP 0900 THU ===
+{
+  "summary": {
+    "destination": "BRITOMART",
+    "arrival": "0941",
+    "duration": "38m"
+  },
+  "legs": [
+    {
+      "mode": "BUS",
+      "line": "72X",
+      "board": "Ellerslie Park Rd",
+      "board_time": "0907",
+      "alight": "Commerce St",
+      "alight_time": "0938"
+    }
+  ],
+  "final_walk": "Britomart",
+  "walk_distance": 263,
+  "walk_duration": "4 mins"
+}
+=== ELZ + HOM ===
+{
+  "summary": {
+    "destination": "ELZ",
+    "arrival": "1843",
+    "duration": "300m"
+  },
+  "legs": [
+    {
+      "mode": "BUS",
+      "line": "23",
+      "board": "Wainui Rd, Raglan (before Ngarunui Beach Rd)",
+      "board_time": "1345",
+      "alight": "Hamilton Transport Centre",
+      "alight_time": "1456"
+    },
+    {
+      "mode": "BUS",
+      "line": "Auckland",
+      "board": "Hamilton",
+      "board_time": "1545",
+      "alight": "Papakura (Auckland)",
+      "alight_time": "1704"
+    },
+    {
+      "mode": "TRN",
+      "line": "Sth",
+      "board": "Papakura",
+      "board_time": "1720",
+      "alight": "Newmarket Station",
+      "alight_time": "1805"
+    },
+    {
+      "mode": "TRN",
+      "line": "West",
+      "board": "Newmarket Station",
+      "board_time": "1813",
+      "alight": "Fruitvale Rd",
+      "alight_time": "1839"
+    }
+  ],
+  "final_walk": "13 Fruitvale Rd",
+  "walk_distance": 283,
+  "walk_duration": "4 mins"
+}
+=== newmarket + britomart ===
+{
+  "summary": {
+    "destination": "NEWMARKET",
+    "arrival": "1154",
+    "duration": "18m"
+  },
+  "legs": [
+    {
+      "mode": "BUS",
+      "line": "70",
+      "board": "Britomart Pl",
+      "board_time": "1140",
+      "alight": "Broadway",
+      "alight_time": "1153"
+    }
+  ],
+  "final_walk": null,
+  "walk_distance": null,
+  "walk_duration": null
+}
