@@ -1,0 +1,28 @@
+If it was a cli model:
+
+input.py should only be collecting user input from the web form and writing to gmap.json
+
+INPUT.PY [DESTINATION][START_LOCATION][[START_TIME][START_DAY]][[ARRIVE_BY_TIME][ARRIVE_BY_DAY][CITY="STRING"][LAST][CODE="STRING"][MODE="STRING"]
+
+where: 
+
+input.py default is: input.py "mydestination" 
+
+the next step would be:
+
+input.py "mydestination + mystartlocation" i.e + = "from"
+
+input.py "mydestination + mystartlocation" [LAST]
+
+and so on with the flags
+
+
+[CITY="mycity"] is a standalone query. No direction logic required. Just writes to gmap.json
+
+[MODE="mymode"] iis a standalone query. No direction logic required. Just writes to gmap.json
+
+CODE denotes a string and/or a google placeID
+
+
+
+
