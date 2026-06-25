@@ -1,143 +1,156 @@
 === britomart ===
 {
-  "_START": "HOM",
+  "_START": "ellerslie",
   "_DES": "britomart",
-  "_MODE": "WLK",
+  "_MODE": "TRN",
   "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === britomart + ellerslie ===
 {
   "_START": "ellerslie",
   "_DES": "britomart",
-  "_MODE": "WLK",
+  "_MODE": "TRN",
   "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === britomart + ellerslie 0900 ===
 {
   "_START": "ellerslie",
   "_DES": "britomart",
-  "_MODE": "WLK",
-  "_START_TIME": "0900",
+  "_MODE": "TRN",
+  "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === britomart + ellerslie 0900 MON ===
 {
   "_START": "ellerslie",
   "_DES": "britomart",
-  "_MODE": "WLK",
-  "_START_TIME": "0900",
+  "_MODE": "TRN",
+  "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
-  "_DAY": "MON",
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_DAY": null,
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === britomart + ellerslie ARR 0900 ===
 {
   "_START": "ellerslie",
   "_DES": "britomart",
-  "_MODE": "WLK",
+  "_MODE": "TRN",
   "_START_TIME": null,
-  "_ARRIVE_BY_TIME": "0900",
+  "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === britomart + ellerslie ARR 0900 FRI ===
 {
   "_START": "ellerslie",
   "_DES": "britomart",
-  "_MODE": "WLK",
+  "_MODE": "TRN",
   "_START_TIME": null,
-  "_ARRIVE_BY_TIME": "0900",
-  "_DAY": "FRI",
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_ARRIVE_BY_TIME": null,
+  "_DAY": null,
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === britomart + ellerslie 0900 LAST ===
 {
   "_START": "ellerslie",
   "_DES": "britomart",
-  "_MODE": "WLK",
-  "_START_TIME": "0900",
+  "_MODE": "TRN",
+  "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
   "_LAST": true,
-  "_CITY": "Wellington"
+  "_CITY": "Auckland"
 }
+
 === ELZ ===
 {
   "_START": "ellerslie",
-  "_DES": "ELZ",
-  "_MODE": "WLK",
+  "_DES": "britomart",
+  "_MODE": "TRN",
   "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === ELZ + HOM ===
 {
-  "_START": "HOM",
-  "_DES": "ELZ",
-  "_MODE": "WLK",
+  "_START": "ellerslie",
+  "_DES": "britomart",
+  "_MODE": "TRN",
   "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === MODE=BUS ===
 {
-  "_START": "HOM",
-  "_DES": "ELZ",
-  "_MODE": "BUS",
+  "_START": "ellerslie",
+  "_DES": "britomart",
+  "_MODE": "TRN",
   "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === MODE=WLK ===
 {
-  "_START": "HOM",
-  "_DES": "ELZ",
-  "_MODE": "WLK",
+  "_START": "ellerslie",
+  "_DES": "britomart",
+  "_MODE": "TRN",
   "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === CITY=Wellington ===
 {
-  "_START": "HOM",
-  "_DES": "ELZ",
-  "_MODE": "WLK",
+  "_START": "ellerslie",
+  "_DES": "britomart",
+  "_MODE": "TRN",
   "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
 === CODE=WAI:ChIJsRdro_5HDW0RpFmy0CRiKRE ===
 {
-  "_START": "HOM",
-  "_DES": "ELZ",
-  "_MODE": "WLK",
+  "_START": "ellerslie",
+  "_DES": "britomart",
+  "_MODE": "TRN",
   "_START_TIME": null,
   "_ARRIVE_BY_TIME": null,
   "_DAY": null,
-  "_LAST": null,
-  "_CITY": "Wellington"
+  "_LAST": true,
+  "_CITY": "Auckland"
 }
+
