@@ -33,6 +33,7 @@ def run():
            + '?origin=place_id:'      + origin
            + '&destination=place_id:' + dest
            + '&mode=transit'
+           + '&transit_routing_preference=less_walking'
            + '&key='                  + GMAPS_KEY)
 
     if arr:

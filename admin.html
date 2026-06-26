@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: sans-serif;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h2 { font-size: 1rem; color: #555; margin: 32px 0 10px; }
+  input[type="text"] {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+  }
+  button {
+    padding: 8px 24px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 24px;
+    background: #f8f9fa;
+    cursor: pointer;
+  }
+  button.dummy { color: #bbb; cursor: default; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  td { padding: 8px 4px; border-bottom: 1px solid #eee; font-size: 0.95rem; }
+  td:last-child { text-align: right; }
+</style>
+</head>
+<body>
+
+<h2>City</h2>
+<form action="/admin/city" method="POST">
+  <input type="text" name="city" placeholder="e.g. auckland" autocomplete="off">
+  <button type="submit">set</button>
+</form>
+
+<h2>Add favourite</h2>
+<form action="/admin/code" method="POST">
+  <input type="text" name="code" placeholder="code e.g. Q" autocomplete="off">
+  <input type="text" name="address" placeholder="address e.g. 305 Queen St" autocomplete="off">
+  <button type="submit">add</button>
+</form>
+
+<h2>Favourites</h2>
+<table>
+  <tr>
+    <td>ELZ</td>
+    <td>Ellen Melville Centre</td>
+    <td>
+      <button class="dummy">edit</button>
+      <button class="dummy">del</button>
+    </td>
+  </tr>
+  <tr>
+    <td>WAI</td>
+    <td>Waitemata</td>
+    <td>
+      <button class="dummy">edit</button>
+      <button class="dummy">del</button>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

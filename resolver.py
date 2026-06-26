@@ -11,8 +11,7 @@ import urllib.request
 import urllib.parse
 
 from dotenv import load_dotenv
-load_dotenv(os.path.expanduser('~/projects/gmap/.env'))
-
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env'))
 import state
 
 GMAPS_KEY = os.environ.get('GMAPS_API_KEY', '')
