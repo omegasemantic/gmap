@@ -12,11 +12,15 @@ import os
 import sys
 import subprocess
 from urllib.parse import parse_qs
+from dotenv import load_dotenv
 
-PORT = 8080
-BASE = os.path.expanduser('~/projects/gmap')
+BASE = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(os.path.join(BASE, '.env'))
+
+
 sys.path.insert(0, BASE)
 
+PORT = int(os.environ.get('GMAP_PORT', 8080))
 class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
