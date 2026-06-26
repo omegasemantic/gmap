@@ -4,8 +4,13 @@ state.py — gmap.json and codes.json read/write functions
 import json
 import os
 
-STATE_FILE = os.path.expanduser('~/projects/gmap/gmap.json')
-CODES_FILE = os.path.expanduser('~/projects/gmap/codes.json')
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+STATE_FILE = os.path.join(BASE, 'gmap.json')
+CODES_FILE = os.path.join(BASE, 'codes.json')
+
+
+
 
 def _load(path):
     with open(path) as f:
