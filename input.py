@@ -18,10 +18,12 @@ Syntax:
 import sys
 import os
 import state
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+import zoneinfo
 
 VALID_MODES = ['BUS', 'TRN']
 VALID_DAYS  = {'MON':0,'TUE':1,'WED':2,'THU':3,'FRI':4,'SAT':5,'SUN':6}
+NZ = zoneinfo.ZoneInfo('Pacific/Auckland')
 
 def parse_time(hhmm, day_str=None):
     hour   = int(hhmm[:2])
@@ -29,7 +31,7 @@ def parse_time(hhmm, day_str=None):
     if hour > 23 or minute > 59:
         print('ERROR: invalid time')
         sys.exit(1)
-    now = datetime.now()
+    now = datetime.now(NZ)
     if day_str:
         days_ahead = (VALID_DAYS[day_str] - now.weekday()) % 7
         if days_ahead == 0:
