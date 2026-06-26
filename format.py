@@ -10,9 +10,9 @@ import re
 from datetime import datetime
 
 import state
-
-RESPONSE_FILE  = os.path.expanduser('~/projects/gmap/response.json')
-OUTPUT_FILE    = os.path.expanduser('~/projects/gmap/output.json')
+BASE = os.path.dirname(os.path.abspath(__file__))
+RESPONSE_FILE = os.path.join(BASE, 'response.json')
+OUTPUT_FILE   = os.path.join(BASE, 'output.json')
 WALK_THRESHOLD = 200
 
 ABBREV = [

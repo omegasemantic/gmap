@@ -6,8 +6,10 @@ render.py — reads output.json, writes result.html
 import json
 import os
 
-OUTPUT_FILE = os.path.expanduser('~/projects/gmap/output.json')
-RESULT_FILE = os.path.expanduser('~/projects/gmap/result.html')
+BASE = os.path.dirname(os.path.abspath(__file__))
+RESPONSE_FILE = os.path.join(BASE, 'response.json')
+OUTPUT_FILE   = os.path.join(BASE, 'output.json')
+RESULT_FILE = os.path.join(BASE, 'result.html')
 
 def run():
     data = json.load(open(OUTPUT_FILE))

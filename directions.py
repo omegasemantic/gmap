@@ -9,13 +9,12 @@ import os
 import sys
 import urllib.request
 from dotenv import load_dotenv
-load_dotenv(os.path.expanduser('~/projects/gmap/.env'))
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env'))
 
 import state
 
 GMAPS_KEY     = os.environ.get('GMAPS_API_KEY', '')
-RESPONSE_FILE = os.path.expanduser('~/projects/gmap/response.json')
-
+RESPONSE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'response.json')
 def run():
     d      = state.read_all()
     origin = d.get('_START_ID')

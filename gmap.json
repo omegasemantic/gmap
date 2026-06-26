@@ -1,10 +1,10 @@
 {
-  "_START": "wai",
-  "_DES": "elz",
-  "_START_ID": "ChIJsRdro_5HDW0RpFmy0CRiKRE",
-  "_DES_ID": "ChIJuVZm52dBDW0RFZRYqaSrc_0",
+  "_START": "elz",
+  "_DES": "Wai",
+  "_START_ID": "ChIJuVZm52dBDW0RFZRYqaSrc_0",
+  "_DES_ID": "ChIJsRdro_5HDW0RpFmy0CRiKRE",
   "_MODE": "TRN",
   "_CITY": "Auckland",
   "_DEP": null,
-  "_ARR": null
+  "_ARR": 1782453600
 }
