@@ -38,7 +38,7 @@ def to_24hr(time_str):
 
 def first_road(stop_name):
     name = stop_name.split(' - ')[0].strip()
-    name = name.split(',')[0].strip()
+    name = re.sub(r',\s*[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*(?=\s*(?:\(|$))', '', name).strip()
     return abbreviate(name.split('/')[0].strip())
 
 def short_line(name):
