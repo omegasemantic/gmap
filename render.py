@@ -15,7 +15,7 @@ def run():
     data = json.load(open(OUTPUT_FILE))
 
     if 'error' in data:
-        html = '<html><body style="font-size:large"><p>NO ROUTE FOUND</p></body></html>'
+        html = '<html><body <font size="4"><p>NO ROUTE FOUND</p></body></html>'
     else:
         s     = data['summary']
         lines = []
